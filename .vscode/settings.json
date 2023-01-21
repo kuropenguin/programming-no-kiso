@@ -3,5 +3,9 @@
   "ocaml.sandbox": {
     "switch": "4.14",
     "kind": "opam"
-  }
+  },
+  // dotfiles
+  "dotfiles.repository": "https://github.com/kuropenguin/vscode-remote-container-dotfiles",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "~/dotfiles/init.sh"
 }
