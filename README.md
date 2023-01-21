@@ -31,7 +31,7 @@ http://pllab.is.ocha.ac.jp/~asai/book/Top.html の問題実装。
 ### ファイルを読み込ませて実行する
 
 - `ocaml`コマンドで対話モード立ち上げ
-- `#use hogehoge.ml`で読み込ませるフィルを指定して実行
+- `#use "hogehoge.ml"`で読み込ませるフィルを指定して実行
   - 絶対パスで指定しても良い
 - `#quit;;` で対話モードから抜ける
 
