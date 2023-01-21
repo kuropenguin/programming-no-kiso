@@ -20,8 +20,8 @@ RUN opam env >> $HOME/.zshrc
 # VSCodeの拡張（ocamllabs.ocaml-platform）でコード補完するために、Language Serverを準備
 # formatterも入れている
 RUN opam pin add ocaml-lsp-server https://github.com/ocaml/ocaml-lsp.git \
-&& opam install ocaml-lsp-server \
-&& opam install ocamlformat
+	&& opam install ocaml-lsp-server \
+	&& opam install ocamlformat
 
 
 RUN mkdir programming-no-kiso
