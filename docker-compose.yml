@@ -1,0 +1,6 @@
+version: '3'
+services:
+  ocaml:
+    build: .
+    container_name: "OCaml"
+    tty: true
