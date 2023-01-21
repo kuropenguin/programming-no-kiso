@@ -11,11 +11,8 @@ http://pllab.is.ocha.ac.jp/~asai/book/Top.html の問題実装。
 - docker exec -it OCaml bash
 
 ## OCaml の実行
-
-参考
-http://logic.cs.tsukuba.ac.jp/jikken/setup.html
-
-### 対話的に実行する
+コンテナ内で操作している前提
+## 対話的に実行する
 
 - `ocaml`コマンドで対話モード立ち上げ
 - `hogehoge;;` で hogehoge を実行(`;;`が区切り文字)
@@ -28,3 +25,14 @@ http://logic.cs.tsukuba.ac.jp/jikken/setup.html
 - `#use hogehoge.ml`で読み込ませるフィルを指定して実行
   - 絶対パスで指定しても良い
 - `#quit;;` で対話モードから抜ける
+
+
+## 参考にさせていただいたサイト一覧
+- http://logic.cs.tsukuba.ac.jp/jikken/setup.html
+- https://github.com/mk2/ocaml-dev-workspace
+
+ # set rtp^="/home/opam/.opam/4.14/share/ocp-indent/vim"
+
+export PATH="$PATH:$HOME/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/"
+
+export PATH="$PATH:/opt/homebrew/bin/code"
