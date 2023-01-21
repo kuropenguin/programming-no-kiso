@@ -1,11 +1,14 @@
 {
+  // ocaml setting
   "ocaml.lsp.path": "/home/opam/.opam/4.14/bin/ocamllsp",
   "ocaml.sandbox": {
     "switch": "4.14",
     "kind": "opam"
   },
+  //gitconfig
+  "remote.containers.copyGitConfig": true,
   // dotfiles
-  "dotfiles.repository": "https://github.com/kuropenguin/vscode-remote-container-dotfiles",
+  "dotfiles.repository": "https://github.com/kuropenguin/vscode-remote-container-dotfiles.git",
   "dotfiles.targetPath": "~/dotfiles",
   "dotfiles.installCommand": "~/dotfiles/init.sh"
 }

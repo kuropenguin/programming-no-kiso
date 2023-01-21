@@ -9,10 +9,7 @@ RUN sudo apt-get update \
 
 
 # 環境変数の設定
-ENV SHELL /usr/bin/zsh
-
-# zshの実行
-RUN zsh
+ENV SHELL /bin/zsh
 
 # eval $(opam env)の実行をしないと ocaml not foundになるので
 # 以下を参考にした
@@ -23,11 +20,11 @@ RUN opam env >> $HOME/.zshrc
 # VSCodeの拡張（ocamllabs.ocaml-platform）でコード補完するために、Language Serverを準備
 # formatterも入れている
 RUN opam pin add ocaml-lsp-server https://github.com/ocaml/ocaml-lsp.git \
-	&& opam install ocaml-lsp-server \
-	&& opam install ocamlformat
+&& opam install ocaml-lsp-server \
+&& opam install ocamlformat
 
 
 RUN mkdir programming-no-kiso
 WORKDIR /home/opam/programming-no-kiso
 
-
+CMD ["zsh"]
