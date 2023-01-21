@@ -16,13 +16,10 @@ RUN opam pin add ocaml-lsp-server https://github.com/ocaml/ocaml-lsp.git \
 	&& opam install ocaml-lsp-server \
 	&& opam install ocamlformat
 
-# remote container 内でも code commandが使用できるように, codeのPATHを通している(remote-cli以下にcodeがある）。
-RUN code_bin_version=`ls $HOME/.vscode-server/bin/` \
-	&& echo export PATH="$PATH:$HOME/.vscode-server/bin/${code_bin_version}/bin/remote-cli" >> "$HOME/.bashrc"
-
 
 RUN mkdir programming-no-kiso
 WORKDIR /home/opam/programming-no-kiso
+
 
 
 
