@@ -9,3 +9,8 @@ RUN opam env >> /home/opam/.bashrc
 RUN sudo apt-get update
 RUN sudo apt-get install vim -y
 
+RUN mkdir programming-no-kiso
+
+WORKDIR /home/opam/programming-no-kiso
+
+
