@@ -6,7 +6,7 @@
     "kind": "opam"
   },
   // dotfiles
-  "dotfiles.repository": "https://github.com/kuropenguin/vscode-remote-container-dotfiles.git",
+  "dotfiles.repository": "git@github.com:kuropenguin/vscode-remote-container-dotfiles.git",
   "dotfiles.targetPath": "~/dotfiles",
   "dotfiles.installCommand": "~/dotfiles/init.sh"
 }
