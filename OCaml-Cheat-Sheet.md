@@ -54,6 +54,22 @@ let hogehoge = 12
 (* fuga fuga *)
 ```
 
+条件分岐
+```
+if hoge then 1（式） 
+else if then 2（式）
+else 3（式）
+それぞれの式は同じ型である必要がある
+```
+
+符号反転
+```
+-.
+
+x = 3 の時
+-.x = -3
+```
+
 ### 関数
 定義
 ```
@@ -64,6 +80,8 @@ let hoge x = x ** 2
 実行
 ```
 hoge 3;;
+
+hoge(3);; でも
 ```
 
 複数の引数
@@ -84,3 +102,44 @@ int -> int という型
   - A -> B -> C
 	- A -> (B -> C)
 	- Aを受け取り、Bを受け取ったら、Cを返す
+
+
+## 組とパターンマッチ
+組：いくつかのデータを並べて一つのデータとして扱うもの
+```
+(1.2, 2.24)
+
+((2,"a"), 2.3)
+
+22, 2.5
+```
+
+パターンマッチ
+```
+match (3,5) with
+	(a,b) -> a+b;;
+
+
+let add pair = match pair with
+ (a,b) -> a+b;;
+
+
+add(3,5);
+# =8
+```
+
+### レコード（dict）
+レコード
+```
+let hoge = {hogehoge = "aaa", fugafuga = 1, xxx = 1.4}
+hoge.hogehoge;;
+hoge.xxx;
+```
+
+型定義
+```
+type hogehoge = {
+	xxx : string;
+	yyy : int;
+}
+```
