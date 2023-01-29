@@ -17,3 +17,12 @@ let hyoji ekimei_t =
 let test8_6_1 =
   hyoji {kanji= "茗荷谷"; kana= "みょうがだに"; romaji= "myougadani"; shozoku= "丸の内線"}
   = "丸の内線,茗荷谷(みょうがだに)"
+
+(* 8.7 *)
+(* 目的: 駅と駅の接続情報を表す(kiten, shuten, keiyu, kyori, jikan)を表す型*)
+type ekikan_t =
+  { kiten: string (* 起点の駅名 *)
+  ; shuten: string (* 終点の駅名 *)
+  ; keiyu: string (*経由する路線名*)
+  ; kyori: string (*2駅間の距離*)
+  ; jikan: string (*所要時間*) }
