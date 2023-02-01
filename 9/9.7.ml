@@ -16,9 +16,7 @@ type person_t =
 let count_ketsueki_A lst =
   match lst with
   | [] -> 0
-  | first :: rest -> (
-    match first with
-    | {ketsueki= k} -> 0 (* count_ketsueki_A *) )
+  | {ketsueki= k} :: rest -> 0 (* count_ketsueki_A *)
 
 (* 2. 期待される入出力の準備 *)
 let lst1 = []
