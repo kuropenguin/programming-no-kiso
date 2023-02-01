@@ -13,10 +13,12 @@ type person_t =
 (* count_ketsueki_A : person_t list -> int *)
 (* 3. テンプレートの作成(リストを受け取るならmatchを使うなど,大枠) *)
 (* 4. 本体の作成(詳細実装) *)
-let count_ketsueki_A lst =
+let rec count_ketsueki_A lst =
   match lst with
   | [] -> 0
-  | {ketsueki= k} :: rest -> 0 (* count_ketsueki_A *)
+  | {name= n; shincho= s; taiju= t; birth_date= b; ketsueki= k} :: rest ->
+      if k = "A" then 1 + count_ketsueki_A rest
+      else 0 + count_ketsueki_A rest
 
 (* 2. 期待される入出力の準備 *)
 let lst1 = []
