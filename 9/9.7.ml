@@ -40,8 +40,8 @@ let lst4 =
 (* 3. テスト *)
 let test1 = count_ketsueki_A lst1 = 0
 
-let test2 = count_ketsueki_A lst1 = 1
+let test2 = count_ketsueki_A lst2 = 1
 
-let test3 = count_ketsueki_A lst1 = 1
+let test3 = count_ketsueki_A lst3 = 1
 
-let test4 = count_ketsueki_A lst1 = 2
+let test4 = count_ketsueki_A lst4 = 2
