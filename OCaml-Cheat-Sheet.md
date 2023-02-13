@@ -172,3 +172,6 @@ match 式 with
 # 下のように書くと、 firstに先頭要素・resetに先頭を除いたリストが入る
 first :: reset 
 ```
+
+## 高階関数(high-order-function)
+map など。関数を引数として受け取る関数のこと。
