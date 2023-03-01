@@ -1,12 +1,11 @@
-(* lstの中から、 n より p である要素のみを取り出す *)
-let take n lst p = List.filter (fun item -> p item n) lst
-
 (* #use "./15/quick_sort.ml";; *)
 (* 1. クイックソートを使って昇順に並べ替える *)
 (* quick_sort : int list -> int list *)
 (* 2. テンプレートの作成(リストを受け取るならmatchを使うなど,大枠) *)
 (* 5. 本体の作成(詳細実装) *)
 let rec quick_sort lst =
+  (* lstの中から、 n より p である要素のみを取り出す *)
+  let take n lst p = List.filter (fun item -> p item n) lst in
   match lst with
   | [] -> []
   | first :: rest ->
